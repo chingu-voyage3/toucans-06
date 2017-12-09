@@ -1,9 +1,50 @@
 html {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
- }
+}
+
+
+/* HEADER, BUILT BY CAMPER*/
+h1,
+h2 {
+    margin: 0;
+}
+
+.primary-header .button,
+.primary-header .search,
+.primary-header .menu,
+.secondary-header {
+    display: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.header-media {
+    height: 100vh;
+    background: url("../images/bg-header-home.jpg");
+    background-size: cover;
+}
+
+.primary-header {
+    border-bottom: 1px solid #23c6bd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.logo,
+.menu-bars {
+    margin: 2rem 0 1.5rem 0;
+}
