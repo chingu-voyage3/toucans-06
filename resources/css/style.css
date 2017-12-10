@@ -31,7 +31,7 @@ header a {
 
 .header-media {
     height: 100vh;
-    background: url("../images/bg-header-home.jpg");
+    background: url("../images/bg-header-home.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
