@@ -7,3 +7,13 @@ html {
 *:after {
     box-sizing: inherit;
  }
+
+ .bottom-rule {
+    border-bottom: 1px solid lightgray;
+}
+
+.websiteFooter {
+    padding-top: 20px;
+    border-top: 10px solid #080808;
+    background-color: black;
+}
