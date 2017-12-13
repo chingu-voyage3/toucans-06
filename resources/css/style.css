@@ -23,10 +23,11 @@ h2 {
     display: none;
 }
 
-header a {
+header a,
+header .fa{
     color: white;
     text-decoration: none;
-    margin-top: 2rem;
+    //margin-top: 2rem;
 }
 
 .header-media {
@@ -44,7 +45,68 @@ header a {
     margin: 0 auto;
 }
 
-.logo,
-.menu-bars {
+.logo-content,
+.button-content {
     margin: 2rem 0 1.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .secondary-header h1,
+    .secondary-header h2 {
+        font-size: 1rem;
+        color: white;
+        padding-left: 1rem;
+    }
+
+    .secondary-header h1 {
+        border-right: 1px solid white;
+        padding-right: 1rem;
+    }
+
+    .secondary-header h2 {
+        font-weight: bold;
+    }
+    
+    .secondary-header {
+        padding: 1rem 1rem 0 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .primary-header {
+        width: 95%;
+    }
+
+    .primary-header .button,
+    .primary-header .search,
+    .primary-header .menu,
+    .primary-header .menu-bars {
+        display: block;
+        margin-left: 1rem;
+    }
+    
+    .button-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .primary-header .button {
+        border-radius: .25rem;
+        width: 8rem;
+        padding: .5rem 1rem;
+        text-align: center;
+    }
+
+    .logo-content, .button-content {
+        margin: 1rem 0 .7rem 0;
+    }
+    
+    .contact-us {
+        background-color: #603e96;
+    }
+
+    .one-match {
+        background-color: #25ccc0;
+    }
 }
