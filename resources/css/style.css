@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
 html {
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
 
 *,
@@ -27,7 +30,6 @@ header a,
 header .fa{
     color: white;
     text-decoration: none;
-    //margin-top: 2rem;
 }
 
 .header-media {
@@ -61,20 +63,23 @@ header .fa{
     .secondary-header h1 {
         border-right: 1px solid white;
         padding-right: 1rem;
+        font-weight: normal;
     }
 
     .secondary-header h2 {
         font-weight: bold;
     }
-    
+
     .secondary-header {
-        padding: 1rem 1rem 0 0;
+        padding-top: 1rem;
         display: flex;
         justify-content: flex-end;
+        margin: auto;
     }
 
-    .primary-header {
-        width: 95%;
+    .primary-header,
+    .secondary-header {
+        width: 95vw;
     }
 
     .primary-header .button,
@@ -83,8 +88,9 @@ header .fa{
     .primary-header .menu-bars {
         display: block;
         margin-left: 1rem;
+        text-transform: uppercase;
     }
-    
+
     .button-content {
         display: flex;
         align-items: center;
@@ -94,19 +100,32 @@ header .fa{
     .primary-header .button {
         border-radius: .25rem;
         width: 8rem;
-        padding: .5rem 1rem;
+        padding: .7rem .5rem;
         text-align: center;
+        transition: Background-color .25s ease-in-out;
+    }
+
+    .primary-header .button:hover {
+        //opacity: 1;
     }
 
     .logo-content, .button-content {
         margin: 1rem 0 .7rem 0;
     }
-    
+
     .contact-us {
         background-color: #603e96;
     }
 
+    .contact-us:hover {
+        Background-color: #39186c;
+    }
+
     .one-match {
         background-color: #25ccc0;
+    }
+
+    .one-match:hover {
+        Background-color: #0ea196;
     }
 }
