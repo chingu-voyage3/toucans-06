@@ -105,10 +105,6 @@ header .fa{
         transition: Background-color .25s ease-in-out;
     }
 
-    .primary-header .button:hover {
-        //opacity: 1;
-    }
-
     .logo-content, .button-content {
         margin: 1rem 0 .7rem 0;
     }
