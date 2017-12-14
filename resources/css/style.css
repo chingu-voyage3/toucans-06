@@ -38,6 +38,10 @@ header .fa{
     background-size: cover;
 }
 
+video {
+    display: none;
+}
+
 .primary-header {
     border-bottom: 1px solid #23c6bd;
     display: flex;
@@ -123,5 +127,19 @@ header .fa{
 
     .one-match:hover {
         Background-color: #0ea196;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header-media {
+        height: 85vh;
+    }
+
+    video {
+        display: block;
+        position: relative;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
     }
 }
