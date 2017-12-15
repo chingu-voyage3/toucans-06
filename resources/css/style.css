@@ -133,6 +133,12 @@ video {
     .one-match:hover {
         Background-color: #0ea196;
     }
+
+    .clients {
+        background: url("../images/logos.jpg") center center no-repeat;
+        background-size: 100vh;
+        height: 10vh;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
