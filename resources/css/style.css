@@ -53,6 +53,10 @@ header .fa{
 }
 
 @media only screen and (min-width: 768px) {
+    .header-media {
+        height: 90vh;
+    }
+
     .secondary-header h1,
     .secondary-header h2 {
         font-size: 1rem;
@@ -123,5 +127,11 @@ header .fa{
 
     .one-match:hover {
         Background-color: #0ea196;
+    }
+
+    .clients {
+        background: url("../images/logos.jpg") center center no-repeat;
+        background-size: 100vh;
+        height: 10vh;
     }
 }
