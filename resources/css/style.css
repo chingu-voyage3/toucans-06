@@ -136,7 +136,7 @@ video {
 
     .clients {
         background: url("../images/logos.jpg") center center no-repeat;
-        background-size: 100vh;
+        background-size: 100vw;
         height: 10vh;
     }
 }
@@ -160,11 +160,19 @@ video {
         min-width: 100%;
         min-height: 100%;
     }
+
+    .clients {
+        height: 12vh;
+    }
 }
 
 @media only screen and (min-width: 1170px) {
     .primary-header,
     .secondary-header {
         width: 1170px;
+    }
+
+    .clients {
+        background-size: 1170px;
     }
 }
