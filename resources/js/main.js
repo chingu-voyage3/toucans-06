@@ -31,12 +31,14 @@ window.onload = function() {
     // select random number between 1 and 3, add innerHTML to video
     // element with video file name
 
-    let randomVideo = `video${Math.floor(Math.random() * 3) + 1}.mp4`;
-    let videoElement = document.getElementsByTagName("video");
+    let randomVideoNum = Math.floor(Math.random() * 3) + 1;
+    let videoElement = document.getElementsByTagName("video")[0];
 
-    videoElement[0].innerHTML = `
-            <source src="./resources/videos/${randomVideo}" type="video/mp4">
-            Videos of people doing different tasks in the nonprofit organizations we support.`
+    videoElement.poster = `./resources/images/video_poster${randomVideoNum}.jpg`;
+    
+    videoElement.innerHTML = `
+            <source src="./resources/videos/video${randomVideoNum}.mp4" type="video/mp4">
+            Videos of people doing different tasks in the nonprofit organizations we support.`;
 };
 
 
