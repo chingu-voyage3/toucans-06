@@ -1,9 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
 html {
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
- }
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonials a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.testimonials h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.quote-author-image {
+    border: 16px solid white;
+    border-radius: 50%;
+}
+
+.quote-standout,
+.case-study-standout {
+    font-weight: bold;
+}
+
+.highlighted-testimonial blockquote {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.quote-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.focus-box {
+    background-color: #25ccc0;
+    color: white;
+    width: 85%;
+    margin: auto;
+    padding: .5rem;
+}
+
+.quote-author-title {
+    font-size: 1.3rem;
+}
+
+.case-study-name {
+    color: #603e96;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.case-study-description {
+    margin: 1rem 1.5rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.case-study-image {
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+.case-study-url {
+    display: block;
+}
