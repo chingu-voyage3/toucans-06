@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 *,
@@ -43,12 +44,11 @@ video {
 }
 
 .primary-header {
-    border-bottom: 1px solid #23c6bd;
+    border-bottom: 1px solid #a7c3e9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75vw;
-    margin: 0 auto;
+    margin: 0 1.875rem;
 }
 
 .logo-content,
@@ -60,7 +60,7 @@ video {
     .header-media {
         height: 90vh;
     }
-
+    
     .secondary-header h1,
     .secondary-header h2 {
         font-size: 1rem;
@@ -71,7 +71,7 @@ video {
     .secondary-header h1 {
         border-right: 1px solid white;
         padding-right: 1rem;
-        font-weight: normal;
+        font-weight: 300;
     }
 
     .secondary-header h2 {
@@ -82,13 +82,13 @@ video {
         padding-top: 1rem;
         display: flex;
         justify-content: flex-end;
-        margin: auto;
+        margin: 0 1.875rem;
     }
 
-    .primary-header,
+/*    .primary-header,
     .secondary-header {
         width: 95vw;
-    }
+    } */
 
     .primary-header .button,
     .primary-header .search,
@@ -107,11 +107,12 @@ video {
 
     .primary-header .button {
         border-radius: .25rem;
-        width: 8rem;
+        width: 8.75rem;
         padding: .7rem .5rem;
         text-align: center;
         transition: Background-color .25s ease-in-out;
         font-size: .87rem;
+        font-weight: 400;
     }
 
     .logo-content, .button-content {
@@ -132,6 +133,10 @@ video {
 
     .one-match:hover {
         Background-color: #0ea196;
+    }
+
+    header .fa-bars {
+        font-size: 1.2rem;
     }
 
     .clients {
@@ -166,10 +171,11 @@ video {
     }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1190px) {
     .primary-header,
     .secondary-header {
         width: 1170px;
+        margin: auto;
     }
 
     .clients {
