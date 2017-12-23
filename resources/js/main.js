@@ -48,7 +48,7 @@ window.onscroll = function() {
 
     let primaryHeaderElement = document.getElementsByClassName("primary-header");
 
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         primaryHeaderElement[0].classList.add("header-scrolled");
     } else {
         primaryHeaderElement[0].classList.remove("header-scrolled");
