@@ -208,11 +208,29 @@ video {
     .secondary-header {
         width: 1170px;
         margin: auto;
+        padding: 1rem 0;
+    }
+
+    .primary-header::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        border-bottom: 1px solid #a7c3e9;
+        transition: border-bottom .7s ease-out;
+        width: 100%;
     }
 
     .header-scrolled {
         width: 100vw;
         justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .header-scrolled::before {
+        border-bottom: none;
     }
 
     .header-scrolled .logo-content,
