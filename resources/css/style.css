@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 *,
@@ -43,12 +44,13 @@ video {
 }
 
 .primary-header {
-    border-bottom: 1px solid #23c6bd;
+    border-bottom: 1px solid #a7c3e9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75vw;
-    margin: 0 auto;
+    margin: 0 1.875rem;
+    /* margin: 0 auto; */
+    /* margin: 0 1.875rem; */
     position: fixed;
     top: 0;
     left: 0;
@@ -61,7 +63,8 @@ video {
     border: none;
     width: 100%;
     height: 4rem;
-    padding: 0 1rem;
+    padding: 0 1.875rem;
+    margin: 0;
 }
 
 .logo-content,
@@ -73,7 +76,7 @@ video {
     .header-media {
         height: 88vh;
     }
-
+    
     .secondary-header h1,
     .secondary-header h2 {
         font-size: 1rem;
@@ -84,7 +87,7 @@ video {
     .secondary-header h1 {
         border-right: 1px solid white;
         padding-right: 1rem;
-        font-weight: normal;
+        font-weight: 300;
     }
 
     .secondary-header h2 {
@@ -95,7 +98,8 @@ video {
         padding-top: 1rem;
         display: flex;
         justify-content: flex-end;
-        margin: auto;
+        margin: 0 1.875rem;
+        /* margin: auto; */
         position: absolute;
         top: 0;
         left: 0;
@@ -104,11 +108,6 @@ video {
 
     .primary-header {
         top: 2rem;
-    }
-
-    .primary-header,
-    .secondary-header {
-        width: 95vw;
     }
 
     .primary-header .button,
@@ -128,11 +127,12 @@ video {
 
     .primary-header .button {
         border-radius: .25rem;
-        width: 8rem;
+        width: 8.75rem;
         padding: .7rem .5rem;
         text-align: center;
         transition: Background-color .25s ease-in-out;
         font-size: .87rem;
+        font-weight: 400;
     }
 
     .logo-content, .button-content {
@@ -159,7 +159,11 @@ video {
         width: 100vw;
         top: 0;
     }
-    
+
+    header .fa-bars {
+        font-size: 1.2rem;
+    }
+
     .clients {
         background: url("../images/logos.jpg") center center no-repeat;
         background-size: 100vw;
@@ -187,10 +191,11 @@ video {
     }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1190px) {
     .primary-header,
     .secondary-header {
         width: 1170px;
+        margin: auto;
     }
 
     .header-scrolled {
