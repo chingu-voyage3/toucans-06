@@ -47,10 +47,13 @@ window.onscroll = function() {
     // header-scrolled class and remove class when window is scrolled back to top.
 
     let primaryHeaderElement = document.getElementsByClassName("primary-header");
+    let primaryContainerElement = document.getElementsByClassName("primary-header-container");
 
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         primaryHeaderElement[0].classList.add("header-scrolled");
+        primaryContainerElement[0].classList.add("primary-container-scrolled");
     } else {
         primaryHeaderElement[0].classList.remove("header-scrolled");
+        primaryContainerElement[0].classList.remove("primary-container-scrolled");
     }
 };
