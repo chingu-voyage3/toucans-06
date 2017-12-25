@@ -59,7 +59,7 @@ video {
     .header-media {
         height: 90vh;
     }
-    
+
     .secondary-header h1,
     .secondary-header h2 {
         font-size: 1rem;
@@ -258,8 +258,9 @@ video {
   clear: both;
 }
 
-.footer-aboutus-section, .footer-outsolutions-section, .footer-ourwork-section, .footer-moreinfo-section, .footer-connectwithus-section {
+.footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section, address{
   width: calc(100%/5);
+  font-style: normal;
 }
 
 .footer-header {
@@ -269,7 +270,7 @@ video {
 
 .footer-copyright {
   border-top: 1px solid #636363;
-    color: #636363;
+    color: #636363 ;
     font-size: 14px;
     font-weight: 300;
     line-height: 2em;
@@ -286,7 +287,7 @@ video {
 
 
 
-.footer-sections ul li a {
+.footer-sections .footer-list-item-anchor a {
   color: #fff;
     font-size: 14px;
     text-transform: none;
@@ -294,7 +295,7 @@ video {
     text-decoration: none;
 }
 
-.footer-sections ul li a:hover {
+.footer-sections .footer-list-item-anchor a:hover {
   text-decoration: underline;
 }
 
@@ -304,14 +305,14 @@ video {
     line-height: 0.7em;
 }
 
-.footer-sections span.section-header {
+.footer-sections .section-header {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.footer-sections span.section-header a {
+.footer-sections .section-header a {
   color: white;
 }
 
@@ -349,14 +350,15 @@ video {
 
 .footer-copyright a {
   text-decoration: none !important;
+  color: #636363 !important;
 }
 
 .footer-copyright a:hover {
-  color: white;
+  color: white !important;
   text-decoration: none !important;
 }
 
-.copyright, .copyright:hover{
+.footer-copyright a.copyright, .footer-copyright a.copyright:hover{
   color: #636363 !important;
   text-decoration: none !important;
 }
