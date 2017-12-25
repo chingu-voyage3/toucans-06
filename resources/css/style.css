@@ -13,7 +13,7 @@ html {
     box-sizing: inherit;
 }
 
-/* HEADER, BUILT BY CAMPER*/
+/* HEADER, BUILT BY CAMPER */
 h1,
 h2 {
     margin: 0;
@@ -55,14 +55,14 @@ video {
     margin: 2rem 0 1.5rem 0;
 }
 
-/* TESTIMONIAL, BUILT BY CAMPER*/
+/* TESTIMONIAL, BUILT BY CAMPER */
 .testimonials {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.testimonials a {
+.testimonial-link {
     text-align: center;
     text-decoration: none;
     color: black;
@@ -78,7 +78,7 @@ video {
 }
 
 .quote-author-image {
-    border: 16px solid white;
+    /* border: 16px solid white; */
     border-radius: 50%;
 }
 
@@ -90,12 +90,14 @@ video {
 .quote-icon {
     display: block;
     width: 11%;
+    max-width: 3rem;
     margin: .5rem 0 0 1rem;
 }
 
 .highlighted-testimonial blockquote {
     line-height: 1.5;
     font-size: 1.2rem;
+    margin-top: .5rem;
 }
 
 .quote-author {
@@ -138,7 +140,14 @@ video {
     display: block;
 }
 
+.focus-box {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
 @media only screen and (min-width: 768px) {
+    /* HEADER, BUILT BY CAMPER */
     .header-media {
         height: 90vh;
     }
@@ -220,6 +229,47 @@ video {
         background: url("../images/logos.jpg") center center no-repeat;
         background-size: 100vw;
         height: 10vh;
+    }
+
+    /* TESTIMONIAL, BUILT BY CAMPER */
+    .quote-icon {
+        width: auto;
+        margin: .5rem 0 0 4rem;
+    }
+
+    .highlighted-testimonial blockquote {
+        margin: 0 7rem 1rem 7rem;
+    }
+
+    .quote-author-section {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 4rem;
+    }
+
+    .quote-author-details {
+        margin: .5rem;
+        text-align: right;
+    }
+    
+    .quote-author {
+        order: 1;
+        margin: .5rem;
+    }
+
+    .quote-author-title {
+        order: 2;
+        width: auto;
+    }
+
+    .quote-author-company {
+        order: 3;
+        margin: .5rem;
+    }
+
+    .quote-author-image {
+        order: 4;
     }
 }
 
