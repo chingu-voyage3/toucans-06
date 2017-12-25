@@ -85,6 +85,12 @@ video {
     font-weight: bold;
 }
 
+.quote-icon {
+    display: block;
+    width: 11%;
+    margin: .5rem 0 0 1rem;
+}
+
 .highlighted-testimonial blockquote {
     line-height: 1.5;
     font-size: 1.2rem;
