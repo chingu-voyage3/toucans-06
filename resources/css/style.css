@@ -78,7 +78,6 @@ video {
 }
 
 .quote-author-image {
-    /* border: 16px solid white; */
     border-radius: 50%;
 }
 
@@ -116,6 +115,10 @@ video {
 
 .quote-author-title {
     font-size: 1.3rem;
+}
+
+.case-study {
+    margin: auto 0.5rem;
 }
 
 .case-study-name {
@@ -271,6 +274,51 @@ video {
     .quote-author-image {
         order: 4;
     }
+
+    .testimonials {
+        margin-top: 5rem;
+    }
+
+    .case-study {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem;
+    }
+
+    .case-study-name {
+        width: 100%;
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .case-study-url {
+        order: 2;
+        margin: .5rem 35% 1rem 35%
+    }
+
+    .case-study-image {
+        order: 3;
+        width: 45%;
+    }
+    
+    .case-study-description {
+        order: 4;
+        width: 45%;
+        margin: 0 0 0 1.5rem;
+        text-align: right;
+    }
+
+    .alzheimer .case-study-description {
+        order: 3;
+        margin: 0 1.5rem 0 0;
+        text-align: left;
+    }
+
+    .alzheimer .case-study-image {
+        order: 4;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -307,5 +355,10 @@ video {
 
     .clients {
         background-size: 1170px;
+    }
+
+    .testimonials {
+        max-width: 1170px;
+        margin: 5rem auto;
     }
 }
