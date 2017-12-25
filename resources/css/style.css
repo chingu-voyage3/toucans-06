@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 *,
@@ -12,6 +13,49 @@ html {
     box-sizing: inherit;
 }
 
+/* HEADER, BUILT BY CAMPER*/
+h1,
+h2 {
+    margin: 0;
+}
+
+.primary-header .button,
+.primary-header .search,
+.primary-header .menu,
+.secondary-header {
+    display: none;
+}
+
+header a,
+header .fa{
+    color: white;
+    text-decoration: none;
+}
+
+.header-media {
+    height: 100vh;
+    background: url("../images/bg-header-home.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+video {
+    display: none;
+}
+
+.primary-header {
+    border-bottom: 1px solid #a7c3e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.875rem;
+}
+
+.logo-content,
+.button-content {
+    margin: 2rem 0 1.5rem 0;
+}
+
+/* TESTIMONIAL, BUILT BY CAMPER*/
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -84,4 +128,126 @@ html {
 
 .case-study-url {
     display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-media {
+        height: 90vh;
+    }
+    
+    .secondary-header h1,
+    .secondary-header h2 {
+        font-size: 1rem;
+        color: white;
+        padding-left: 1rem;
+    }
+
+    .secondary-header h1 {
+        border-right: 1px solid white;
+        padding-right: 1rem;
+        font-weight: 300;
+    }
+
+    .secondary-header h2 {
+        font-weight: bold;
+    }
+
+    .secondary-header {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 1.875rem;
+    }
+
+    .primary-header .button,
+    .primary-header .search,
+    .primary-header .menu,
+    .primary-header .menu-bars {
+        display: block;
+        margin-left: 1rem;
+        text-transform: uppercase;
+    }
+
+    .button-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .primary-header .button {
+        border-radius: .25rem;
+        width: 8.75rem;
+        padding: .7rem .5rem;
+        text-align: center;
+        transition: Background-color .25s ease-in-out;
+        font-size: .87rem;
+        font-weight: 400;
+    }
+
+    .logo-content, .button-content {
+        margin: 1rem 0 .7rem 0;
+    }
+
+    .contact-us {
+        background-color: #603e96;
+    }
+
+    .contact-us:hover {
+        Background-color: #39186c;
+    }
+
+    .one-match {
+        background-color: #25ccc0;
+    }
+
+    .one-match:hover {
+        Background-color: #0ea196;
+    }
+
+    header .fa-bars {
+        font-size: 1.2rem;
+    }
+
+    .clients {
+        background: url("../images/logos.jpg") center center no-repeat;
+        background-size: 100vw;
+        height: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header-media {
+        height: 88vh;
+        position: relative;
+        overflow: hidden;
+        z-index: -20;
+        width: 100%;
+    }
+
+    video {
+        display: block;
+        position: absolute;
+        z-index: -10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .clients {
+        height: 12vh;
+    }
+}
+
+@media only screen and (min-width: 1190px) {
+    .primary-header,
+    .secondary-header {
+        width: 1170px;
+        margin: auto;
+    }
+
+    .clients {
+        background-size: 1170px;
+    }
 }
