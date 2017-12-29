@@ -43,11 +43,33 @@ video {
 }
 
 .primary-header {
-    border-bottom: 1px solid #a7c3e9;
+    padding: 0 1.875rem;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    transition: background .5s ease-in-out, top .5s ease-out, border-bottom .5s ease-out;
+}
+
+.primary-header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 1.875rem;
+    border-bottom: 1px solid #a7c3e9;
+}
+
+.header-scrolled {
+    background: rgba(29, 12, 54, 0.95);
+    border: none;
+    max-width: 1170px;
+    padding: 0 1.875rem;
+    margin: 0;
+    top: 0;
+    border: none;
+}
+
+ .primary-container-scrolled {
+    border-bottom: none;
 }
 
 .logo-content,
@@ -152,9 +174,9 @@ video {
 @media only screen and (min-width: 768px) {
     /* HEADER, BUILT BY CAMPER */
     .header-media {
-        height: 90vh;
+        height: 88vh;
     }
-    
+
     .secondary-header h1,
     .secondary-header h2 {
         font-size: 1rem;
@@ -177,6 +199,14 @@ video {
         display: flex;
         justify-content: flex-end;
         margin: 0 1.875rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .primary-header {
+        top: 2rem;
     }
 
     .primary-header .button,
@@ -199,7 +229,7 @@ video {
         width: 8.75rem;
         padding: .7rem .5rem;
         text-align: center;
-        transition: Background-color .25s ease-in-out;
+        transition: background-color .25s ease-in-out;
         font-size: .87rem;
         font-weight: 400;
     }
@@ -224,6 +254,11 @@ video {
         Background-color: #0ea196;
     }
 
+    .header-scrolled {
+        width: auto;
+        top: 0;
+    }
+
     header .fa-bars {
         font-size: 1.2rem;
     }
@@ -231,7 +266,7 @@ video {
     .clients {
         background: url("../images/logos.jpg") center center no-repeat;
         background-size: 100vw;
-        height: 10vh;
+        height: 12vh;
     }
 
     /* TESTIMONIAL, BUILT BY CAMPER */
@@ -323,7 +358,6 @@ video {
 
 @media only screen and (min-width: 1024px) {
     .header-media {
-        height: 88vh;
         position: relative;
         overflow: hidden;
         z-index: -20;
@@ -340,17 +374,27 @@ video {
         min-width: 100%;
         min-height: 100%;
     }
-
-    .clients {
-        height: 12vh;
-    }
 }
 
 @media only screen and (min-width: 1190px) {
+    .primary-header-container {
+        max-width: 1170px;
+        margin: auto;
+    }
+
     .primary-header,
     .secondary-header {
-        width: 1170px;
+        max-width: 1170px;
         margin: auto;
+    }
+
+    .primary-header {
+        max-width: 100vw;
+    }
+
+    .header-scrolled {
+        max-width: 100vw;
+        margin: 0;
     }
 
     .clients {
@@ -361,4 +405,185 @@ video {
         max-width: 1170px;
         margin: 5rem auto;
     }
+}
+
+/* FOOTER, BUILT BY SHALINI*/
+
+.one-match {
+        background-color: #25ccc0;
+    }
+.one-match:hover{
+  Background-color: #0ea196;
+
+}
+
+.contact-us {
+        background-color: #603e96;
+}
+
+.contact-us:hover {
+        Background-color: #39186c;
+}
+
+.fcontainer {
+  padding: 30px;
+  background-color: black;
+}
+
+.quote{
+  background: #f5421c;
+  width:140px;
+}
+
+.quote:hover{
+  background: #ea2e06;
+}
+
+.col-block {
+  display: inline-block;
+  float: left;
+}
+
+.footer-logo{
+  width: 50%;
+}
+
+.footer-buttons{
+  width: 50%;
+
+}
+
+.footer-buttons .button{
+  border-radius: .25rem;
+    width: 8rem;
+    padding: .8rem 1.2em;
+    text-align: center;
+    transition: Background-color .25s ease-in-out;
+    font-size: .87rem;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.float-right{
+  float: right;
+}
+
+.footer-sections {
+  color: white;
+  margin-left: 25px;
+}
+.clearfloat:before,
+.clearfloat:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloat:after {
+  clear: both;
+}
+
+.footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section, address{
+  width: calc(100%/5);
+  font-style: normal;
+}
+
+.footer-header {
+  min-height: 100px;
+  padding-top: 25px;
+}
+
+.footer-copyright {
+  border-top: 1px solid #636363;
+    color: #636363 ;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2em;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.footer-sections ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+
+
+.footer-sections .footer-list-item-anchor a {
+  color: #fff;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-sections .footer-list-item-anchor a:hover {
+  text-decoration: underline;
+}
+
+.footer-sections ul li .connect-phone {
+  font-size: 35px;
+    font-weight: 700;
+    line-height: 0.7em;
+}
+
+.footer-sections .section-header {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer-sections .section-header a {
+  color: white;
+}
+
+.social{
+  text-transform: uppercase;
+    font-size: 12px;
+    line-height: 2em;
+    margin-top: 50px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+.fcontainer a {
+  text-decoration: none;
+}
+
+.fcontainer a:hover {
+  text-decoration: underline;
+}
+
+.social a span.twitter{
+      color: #27ccc0;
+}
+
+.social a span.fb {
+  color: #1980e1;
+}
+
+.footer-copyright a {
+  text-decoration: none !important;
+  color: #636363 !important;
+}
+
+.footer-copyright a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.footer-copyright a.copyright, .footer-copyright a.copyright:hover{
+  color: #636363 !important;
+  text-decoration: none !important;
 }

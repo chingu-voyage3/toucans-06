@@ -28,9 +28,32 @@
  */
 
 window.onload = function() {
-    let randomVideo = `video${Math.floor(Math.random() * 3) + 1}.mp4`;
-    let videoElement = document.getElementsByTagName("video");
-    videoElement[0].innerHTML = `
-            <source src="./resources/videos/${randomVideo}" type="video/mp4">
-            Videos of people doing different tasks in the nonprofit organizations we support.`
+    // select random number between 1 and 3, add innerHTML to video
+    // element with video file name
+
+    let randomVideoNum = Math.floor(Math.random() * 3) + 1;
+    let videoElement = document.getElementsByTagName("video")[0];
+
+    videoElement.poster = `./resources/images/video_poster${randomVideoNum}.jpg`;
+    
+    videoElement.innerHTML = `
+            <source src="./resources/videos/video${randomVideoNum}.mp4" type="video/mp4">
+            Videos of people doing different tasks in the nonprofit organizations we support.`;
+};
+
+
+window.onscroll = function() {
+    // Detect when window is scrolled down more than 50 pixels, then add
+    // header-scrolled class and remove class when window is scrolled back to top.
+
+    let primaryHeaderElement = document.getElementsByClassName("primary-header");
+    let primaryContainerElement = document.getElementsByClassName("primary-header-container");
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        primaryHeaderElement[0].classList.add("header-scrolled");
+        primaryContainerElement[0].classList.add("primary-container-scrolled");
+    } else {
+        primaryHeaderElement[0].classList.remove("header-scrolled");
+        primaryContainerElement[0].classList.remove("primary-container-scrolled");
+    }
 };
