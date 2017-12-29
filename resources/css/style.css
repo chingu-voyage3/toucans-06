@@ -82,6 +82,7 @@ video {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 5rem auto;
 }
 
 .testimonial-link {
@@ -130,9 +131,12 @@ video {
 .focus-box {
     background-color: #25ccc0;
     color: white;
-    width: 85%;
+    /* width: 85%; */
     margin: auto;
     padding: .5rem;
+    text-decoration: none;
+    font-weight: 400;
+    max-width: 60%;
 }
 
 .quote-author-title {
@@ -157,7 +161,7 @@ video {
 }
 
 .case-study-image {
-    width: 100%;
+    width: 60%;
     margin: 0 0 1rem 0;
 }
 
@@ -165,11 +169,190 @@ video {
     display: block;
 }
 
-.focus-box {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
+.case-study .focus-box {
+    max-width: 60%;
 }
+
+/* FOOTER, BUILT BY SHALINI*/
+
+.one-match {
+        background-color: #25ccc0;
+    }
+.one-match:hover{
+  Background-color: #0ea196;
+
+}
+
+.contact-us {
+        background-color: #603e96;
+}
+
+.contact-us:hover {
+        Background-color: #39186c;
+}
+
+.fcontainer {
+  padding: 30px;
+  background-color: black;
+}
+
+.quote{
+  background: #f5421c;
+  width:140px;
+}
+
+.quote:hover{
+  background: #ea2e06;
+}
+
+.col-block {
+  display: inline-block;
+  float: left;
+}
+
+.footer-logo{
+  width: 50%;
+}
+
+.footer-buttons{
+  width: 50%;
+
+}
+
+.footer-buttons .button{
+  border-radius: .25rem;
+    width: 8rem;
+    padding: .8rem 1.2em;
+    text-align: center;
+    transition: Background-color .25s ease-in-out;
+    font-size: .87rem;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.float-right{
+  float: right;
+}
+
+.footer-sections {
+  color: white;
+  margin-left: 25px;
+}
+.clearfloat:before,
+.clearfloat:after {
+  display: table;
+  content: " ";
+}
+
+.clearfloat:after {
+  clear: both;
+}
+
+.footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section, address{
+  width: calc(100%/5);
+  font-style: normal;
+}
+
+.footer-header {
+  min-height: 100px;
+  padding-top: 25px;
+}
+
+.footer-copyright {
+  border-top: 1px solid #636363;
+    color: #636363 ;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2em;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.footer-sections ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-sections .footer-list-item-anchor a {
+  color: #fff;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-sections .footer-list-item-anchor a:hover {
+  text-decoration: underline;
+}
+
+.footer-sections ul li .connect-phone {
+  font-size: 35px;
+    font-weight: 700;
+    line-height: 0.7em;
+}
+
+.footer-sections .section-header {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer-sections .section-header a {
+  color: white;
+}
+
+.social{
+  text-transform: uppercase;
+    font-size: 12px;
+    line-height: 2em;
+    margin-top: 50px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+.fcontainer a {
+  text-decoration: none;
+}
+
+.fcontainer a:hover {
+  text-decoration: underline;
+}
+
+.social a span.twitter{
+      color: #27ccc0;
+}
+
+.social a span.fb {
+  color: #1980e1;
+}
+
+.footer-copyright a {
+  text-decoration: none !important;
+  color: #636363 !important;
+}
+
+.footer-copyright a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.footer-copyright a.copyright, .footer-copyright a.copyright:hover{
+  color: #636363 !important;
+  text-decoration: none !important;
+}
+
+/* Media Queries */
 
 @media only screen and (min-width: 768px) {
     /* HEADER, BUILT BY CAMPER */
@@ -299,6 +482,7 @@ video {
     .quote-author-title {
         order: 2;
         width: auto;
+        max-width: inherit;
     }
 
     .quote-author-company {
@@ -310,8 +494,8 @@ video {
         order: 4;
     }
 
-    .testimonials {
-        margin-top: 5rem;
+    .case-study .focus-box {
+        width: 85%;
     }
 
     .case-study {
@@ -330,12 +514,13 @@ video {
 
     .case-study-url {
         order: 2;
-        margin: .5rem 35% 1rem 35%
+        margin: 3rem 35%;
     }
 
     .case-study-image {
         order: 3;
         width: 45%;
+        margin: 0 0 1rem 0;
     }
     
     .case-study-description {
@@ -403,187 +588,6 @@ video {
 
     .testimonials {
         max-width: 1170px;
-        margin: 5rem auto;
+        /* margin: 5rem auto; */
     }
-}
-
-/* FOOTER, BUILT BY SHALINI*/
-
-.one-match {
-        background-color: #25ccc0;
-    }
-.one-match:hover{
-  Background-color: #0ea196;
-
-}
-
-.contact-us {
-        background-color: #603e96;
-}
-
-.contact-us:hover {
-        Background-color: #39186c;
-}
-
-.fcontainer {
-  padding: 30px;
-  background-color: black;
-}
-
-.quote{
-  background: #f5421c;
-  width:140px;
-}
-
-.quote:hover{
-  background: #ea2e06;
-}
-
-.col-block {
-  display: inline-block;
-  float: left;
-}
-
-.footer-logo{
-  width: 50%;
-}
-
-.footer-buttons{
-  width: 50%;
-
-}
-
-.footer-buttons .button{
-  border-radius: .25rem;
-    width: 8rem;
-    padding: .8rem 1.2em;
-    text-align: center;
-    transition: Background-color .25s ease-in-out;
-    font-size: .87rem;
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-}
-
-.float-right{
-  float: right;
-}
-
-.footer-sections {
-  color: white;
-  margin-left: 25px;
-}
-.clearfloat:before,
-.clearfloat:after {
-  display: table;
-  content: " ";
-}
-
-.clearfloat:after {
-  clear: both;
-}
-
-.footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section, address{
-  width: calc(100%/5);
-  font-style: normal;
-}
-
-.footer-header {
-  min-height: 100px;
-  padding-top: 25px;
-}
-
-.footer-copyright {
-  border-top: 1px solid #636363;
-    color: #636363 ;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 2em;
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 40px;
-}
-
-.footer-sections ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
-
-
-
-.footer-sections .footer-list-item-anchor a {
-  color: #fff;
-    font-size: 14px;
-    text-transform: none;
-    font-weight: 300;
-    text-decoration: none;
-}
-
-.footer-sections .footer-list-item-anchor a:hover {
-  text-decoration: underline;
-}
-
-.footer-sections ul li .connect-phone {
-  font-size: 35px;
-    font-weight: 700;
-    line-height: 0.7em;
-}
-
-.footer-sections .section-header {
-  color: #fff;
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.footer-sections .section-header a {
-  color: white;
-}
-
-.social{
-  text-transform: uppercase;
-    font-size: 12px;
-    line-height: 2em;
-    margin-top: 50px;
-}
-
-.social a {
-  color: white;
-  text-decoration: none;
-}
-
-.social a:hover {
-  text-decoration: underline;
-}
-
-.fcontainer a {
-  text-decoration: none;
-}
-
-.fcontainer a:hover {
-  text-decoration: underline;
-}
-
-.social a span.twitter{
-      color: #27ccc0;
-}
-
-.social a span.fb {
-  color: #1980e1;
-}
-
-.footer-copyright a {
-  text-decoration: none !important;
-  color: #636363 !important;
-}
-
-.footer-copyright a:hover {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.footer-copyright a.copyright, .footer-copyright a.copyright:hover{
-  color: #636363 !important;
-  text-decoration: none !important;
 }
