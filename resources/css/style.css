@@ -49,6 +49,7 @@ video {
     left: 0;
     right: 0;
     transition: background .5s ease-in-out, top .5s ease-out, border-bottom .5s ease-out;
+    z-index: 5;
 }
 
 .primary-header-container {
@@ -68,13 +69,79 @@ video {
     border: none;
 }
 
- .primary-container-scrolled {
+.primary-container-scrolled {
     border-bottom: none;
 }
 
+.logo {
+    height: 100%;
+    vertical-align: middle;
+}
+ 
 .logo-content,
 .button-content {
     margin: 2rem 0 1.5rem 0;
+}
+
+/* BANNER, BUILT BY CAMPER */
+
+.banner {
+    position: absolute;
+    height: 60vh;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0 1.875rem;
+}
+
+.banner h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.banner p span {
+    font-weight: bold;
+}
+
+.banner .button {
+    width: 100%;
+    padding: .875rem;
+    border-radius: .15rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color .25s ease-in;
+}
+
+.banner .quote {
+    margin: 4vh 0 2vh;
+}
+
+.rfp {
+    border: 1px solid white;
+}
+
+.rfp:hover {
+    background-color: #27ccc0;
+}
+
+.banner .fa {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.banner .fa:hover {
+    color: #27ccc0;
 }
 
 /* TESTIMONIAL, BUILT BY CAMPER */
