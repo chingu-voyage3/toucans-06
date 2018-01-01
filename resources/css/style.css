@@ -48,7 +48,7 @@ video {
     top: 1rem;
     left: 0;
     right: 0;
-    transition: background .5s ease-in-out, top .5s ease-out, border-bottom .5s ease-out;
+    transition: background .3s linear, top .3s linear, border-bottom .3s linear;
     z-index: 5;
 }
 
@@ -80,7 +80,7 @@ video {
  
 .logo-content,
 .button-content {
-    margin: 2rem 0 1.5rem 0;
+    margin: 1rem 0;
 }
 
 /* BANNER, BUILT BY CAMPER */
@@ -124,7 +124,7 @@ video {
 }
 
 .banner .quote {
-    margin: 4vh 0 2vh;
+    margin: 4vh 0 2vh 0;
 }
 
 .rfp {
@@ -506,10 +506,6 @@ footer {
         font-weight: 400;
     }
 
-    .logo-content, .button-content {
-        margin: 1rem 0 .7rem 0;
-    }
-
     .contact-us {
         background-color: #603e96;
     }
@@ -539,6 +535,40 @@ footer {
         background: url("../images/logos.jpg") center center no-repeat;
         background-size: 100vw;
         height: 12vh;
+    }
+
+    /* BANNER, BUILT BY CAMPER */
+    .banner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        top: 33vh;
+    }
+
+    .banner h2,
+    .banner p,
+    .banner a {
+        width: 100%;
+    }
+
+    .banner p {
+        margin-bottom: 3rem;
+    }
+
+    .banner .quote,
+    .banner .rfp {
+        width: 35%;
+        max-width: 15rem;
+        margin: 0;
+    }
+
+    .banner .rfp {
+        margin-left: .5rem;
+    }
+
+    .banner .fa {
+        margin-top: 3rem;
     }
 
     /* TESTIMONIAL, BUILT BY CAMPER */
@@ -661,6 +691,14 @@ footer {
         min-width: 100%;
         min-height: 100%;
     }
+
+    .banner h2 {
+        font-size: 2.875rem;
+    }
+
+    .banner p {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (min-width: 1190px) {
@@ -694,7 +732,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 774px){
+@media only screen and (max-width: 800px){
     .footer-buttons {
       width: 100%; //override the web width attribute
     }
