@@ -32,10 +32,9 @@ window.onload = function() {
       Display the modal when the page loads.
       Based on: https://www.w3schools.com/howto/howto_css_modals.asp
      */
-    let modal = document.getElementById("project-modal");
-    let modalContent = document.getElementById("modal-content");
+    let modal = document.getElementById("modal");
     let modalClose = document.getElementsByClassName("fa-times")[0];
-    let modalButton = document.getElementsByClassName("modal-button")[0];
+    let modalRibbon = document.getElementsByClassName("modal-ribbon")[0];
 
     // Display the modal when the page is loaded.
     modal.style.display = "block";
@@ -45,15 +44,15 @@ window.onload = function() {
         modal.style.display = "none";
     }
 
-    modalButton.onclick = function() {
+    modalRibbon.onclick = function() {
         modal.style.display = "block";
     }
 
     window.onclick = function(event) {
         console.log(event);
-        console.log(modalContent);
-        if (event.target === modalContent) {
-            console.log(`${modalContent} is clicked`);
+        console.log(modal);
+        if (event.target === modal) {
+            console.log(`${modal} is clicked`);
             modal.style.display = "none";
         }
     }
@@ -80,16 +79,13 @@ window.onload = function() {
 
         let primaryHeaderElement = document.getElementsByClassName("primary-header");
         let primaryContainerElement = document.getElementsByClassName("primary-header-container");
-        let modalButtonElement = document.getElementsByClassName("modal-button");
 
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             primaryHeaderElement[0].classList.add("header-scrolled");
             primaryContainerElement[0].classList.add("primary-container-scrolled");
-            modalButtonElement[0].classList.add("modal-button-scrolled");
         } else {
             primaryHeaderElement[0].classList.remove("header-scrolled");
             primaryContainerElement[0].classList.remove("primary-container-scrolled");
-            modalButtonElement[0].classList.remove("modal-button-scrolled");
         }
     };
 };
