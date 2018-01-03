@@ -13,6 +13,71 @@ html {
     box-sizing: inherit;
 }
 
+/* MODAL, BUILT BY CAMPER */
+.modal-button {
+    width: 100%;
+    padding: .25rem 0;
+    font-size: .75rem;
+    font-weight: bold;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: .25rem;
+    transition: letter-spacing .3s linear;
+    text-transform: uppercase;
+}
+
+.modal-button:hover {
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.modal-button-scrolled {
+    margin-top: .5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgba(29, 12, 54, 0.75);
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-weight: bold;
+    transition: display .25s ease-in-out;
+}
+
+.modal-content a {
+    color: white;
+}
+
+.fa-times {
+    transition: text-shadow .25s ease-in-out;
+}
+
+.fa-times:hover,
+.fa-times:focus,
+.modal-content a:hover,
+.modal-content a:focus {
+    text-shadow: #F5E39D 1px 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
 /* HEADER, BUILT BY CAMPER */
 h1,
 h2 {
@@ -56,6 +121,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid #a7c3e9;
 }
 
@@ -423,6 +489,15 @@ video {
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
+    /* MODAL, BUILT BY CAMPER */
+    .modal-button {
+        margin-top: 1rem;
+    }
+
+    .modal-button-scrolled {
+        margin-top: .5rem;
+    }
+
     /* HEADER, BUILT BY CAMPER */
     .header-media {
         height: 88vh;
@@ -575,7 +650,7 @@ video {
         margin: .5rem;
         text-align: right;
     }
-    
+
     .quote-author {
         order: 1;
         margin: .5rem;
@@ -624,7 +699,7 @@ video {
         width: 45%;
         margin: 0 0 1rem 0;
     }
-    
+
     .case-study-description {
         order: 4;
         width: 45%;

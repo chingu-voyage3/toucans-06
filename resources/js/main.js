@@ -29,8 +29,38 @@
 
 window.onload = function() {
     /*
-       Select random number between 1 and 3, add innerHTML to video
-       element with video file name
+      Display the modal when the page loads.
+      Based on: https://www.w3schools.com/howto/howto_css_modals.asp
+     */
+    let modal = document.getElementById("project-modal");
+    let modalContent = document.getElementById("modal-content");
+    let modalClose = document.getElementsByClassName("fa-times")[0];
+    let modalButton = document.getElementsByClassName("modal-button")[0];
+
+    // Display the modal when the page is loaded.
+    modal.style.display = "block";
+
+    // Hide the modal
+    modalClose.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    modalButton.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        console.log(event);
+        console.log(modalContent);
+        if (event.target === modalContent) {
+            console.log(`${modalContent} is clicked`);
+            modal.style.display = "none";
+        }
+    }
+
+    /*
+      Select random number between 1 and 3, add innerHTML to video
+      element with video file name
     */
 
     let randomVideoNum = Math.floor(Math.random() * 3) + 1;
@@ -44,28 +74,31 @@ window.onload = function() {
 
     window.onscroll = function() {
         /*
-           Detect when window is scrolled down more than 50 pixels, then add
-           header-scrolled class and remove class when window is scrolled back to top. 
+          Detect when window is scrolled down more than 50 pixels, then add
+          header-scrolled class and remove class when window is scrolled back to top. 
         */
 
         let primaryHeaderElement = document.getElementsByClassName("primary-header");
         let primaryContainerElement = document.getElementsByClassName("primary-header-container");
+        let modalButtonElement = document.getElementsByClassName("modal-button");
 
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             primaryHeaderElement[0].classList.add("header-scrolled");
             primaryContainerElement[0].classList.add("primary-container-scrolled");
+            modalButtonElement[0].classList.add("modal-button-scrolled");
         } else {
             primaryHeaderElement[0].classList.remove("header-scrolled");
             primaryContainerElement[0].classList.remove("primary-container-scrolled");
+            modalButtonElement[0].classList.remove("modal-button-scrolled");
         }
     };
 };
 
 /*
- Scroll to blog section
+  Scroll to blog section
 
- TODO: This should probably be replaced by jQuery so it's compatible with more browsers
- and to make it so we can control the speed of the scroll.
+  TODO: This should probably be replaced by jQuery so it's compatible with more browsers
+  and to make it so we can control the speed of the scroll.
 */
 var scrollToBlog = () => {
     document.querySelector('#blog').scrollIntoView({ 
