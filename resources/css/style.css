@@ -418,7 +418,7 @@ video {
     }
 
     .logo-content, .button-content {
-        margin: 1rem 0 .7rem 0;
+        margin: 1rem 0;
     }
 
     .contact-us {
@@ -473,6 +473,7 @@ video {
         margin: .5rem;
         text-align: right;
     }
+    
 
     .quote-author {
         order: 1;
@@ -523,11 +524,13 @@ video {
         margin: 0 0 1rem 0;
     }
 
+    
+
     .case-study-description {
         order: 4;
         width: 45%;
         margin: 0 0 0 1.5rem;
-        text-align: right;
+        text-align: left;
     }
 
     .alzheimer .case-study-description {
@@ -600,8 +603,6 @@ video {
         /* margin: 5rem auto; */
     }
 
-
-
 }
 
 @media only screen and (max-width: 414px){
@@ -664,5 +665,4 @@ video {
       margin-top: 0;
       margin-bottom: 50px;
     }
-
 }
