@@ -473,7 +473,7 @@ video {
         margin: .5rem;
         text-align: right;
     }
-    
+
     .quote-author {
         order: 1;
         margin: .5rem;
@@ -522,7 +522,7 @@ video {
         width: 45%;
         margin: 0 0 1rem 0;
     }
-    
+
     .case-study-description {
         order: 4;
         width: 45%;
@@ -538,6 +538,15 @@ video {
 
     .alzheimer .case-study-image {
         order: 4;
+    }
+
+    /* FOOTER, BUILT BY SHALINI */
+    .footer-logo {
+      width: 30%;
+    }
+
+    .footer-buttons {
+      width: 70%;
     }
 }
 
@@ -590,4 +599,70 @@ video {
         max-width: 1170px;
         /* margin: 5rem auto; */
     }
+
+
+
+}
+
+@media only screen and (max-width: 414px){
+
+    .footer-buttons {
+      width: 100%; //override the web width attribute
+    }
+
+    .float-right, .col-block{
+      float:none;
+    }
+
+    .fcontainer {
+      padding: 0%;
+    }
+
+    .footer-buttons .footer-buttons-wrapper {
+      margin: 0 40px 0 40px;
+    }
+
+    .footer-buttons .button {
+      box-sizing: content-box;
+      display: block;
+      float: none;
+      width: auto;
+    }
+
+    .footer-logo, .footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section,
+    .address {
+      display: none;
+    }
+
+    .footer-sections {
+      margin-left: 0;//reset web margin
+      width: 100%;
+    }
+
+    .footer-sections address {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding-top: 2em;
+    }
+
+    .section-header, .footer-list-item-anchor, .social, .footer-copyright{
+      display: block;
+    }
+
+    .footer-list-item-anchor li {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .footer-sections .social {
+      padding-bottom: 50px;
+    }
+
+    .footer-copyright {
+      min-height: 300px;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
 }
