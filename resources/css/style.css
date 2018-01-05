@@ -352,6 +352,18 @@ video {
   text-decoration: none !important;
 }
 
+.footer-copyright address {
+  text-decoration: none !important;
+  color: #636363 !important;
+  display: table-cell;
+}
+
+.footer-copyright address:hover {
+  color: white !important;
+  text-decoration: none !important;
+  display: table-cell;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
@@ -418,7 +430,7 @@ video {
     }
 
     .logo-content, .button-content {
-        margin: 1rem 0;
+        margin: 1rem 0 .7rem 0;
     }
 
     .contact-us {
@@ -473,7 +485,6 @@ video {
         margin: .5rem;
         text-align: right;
     }
-    
 
     .quote-author {
         order: 1;
@@ -524,13 +535,11 @@ video {
         margin: 0 0 1rem 0;
     }
 
-    
-
     .case-study-description {
         order: 4;
         width: 45%;
         margin: 0 0 0 1.5rem;
-        text-align: left;
+        text-align: right;
     }
 
     .alzheimer .case-study-description {
@@ -602,11 +611,9 @@ video {
         max-width: 1170px;
         /* margin: 5rem auto; */
     }
-
 }
 
 @media only screen and (max-width: 414px){
-
     .footer-buttons {
       width: 100%; //override the web width attribute
     }
@@ -630,8 +637,12 @@ video {
       width: auto;
     }
 
-    .footer-logo, .footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section,
-    .address {
+    .footer-buttons a{
+      text-decoration: none;
+    }
+
+    .footer-logo, .footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section
+    {
       display: none;
     }
 
@@ -661,8 +672,8 @@ video {
     }
 
     .footer-copyright {
-      min-height: 300px;
+      padding: 20px;
       margin-top: 0;
-      margin-bottom: 50px;
+
     }
 }
