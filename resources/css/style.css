@@ -180,6 +180,7 @@ video {
     }
 .one-match:hover{
   Background-color: #0ea196;
+  text-decoration: none !important;
 
 }
 
@@ -189,6 +190,7 @@ video {
 
 .contact-us:hover {
         Background-color: #39186c;
+        text-decoration: none !important;
 }
 
 footer {
@@ -209,6 +211,7 @@ footer {
 
 .quote:hover{
   background: #ea2e06;
+  text-decoration: none !important;
 }
 
 .col-block {
