@@ -191,9 +191,15 @@ video {
         Background-color: #39186c;
 }
 
+footer {
+  background-color: black;
+}
+
 .fcontainer {
   padding: 30px;
-  background-color: black;
+  max-width: 1170px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .quote{
@@ -355,13 +361,13 @@ video {
 .footer-copyright address {
   text-decoration: none !important;
   color: #636363 !important;
-  display: table-cell;
+  display: inline;
 }
 
 .footer-copyright address:hover {
   color: white !important;
   text-decoration: none !important;
-  display: table-cell;
+  display: inline;
 }
 
 /* Media Queries */
@@ -617,7 +623,7 @@ video {
     }
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 767px){
     .footer-buttons {
       width: 100%; //override the web width attribute
     }
