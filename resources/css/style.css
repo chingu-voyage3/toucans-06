@@ -48,7 +48,8 @@ video {
     top: 1rem;
     left: 0;
     right: 0;
-    transition: background .5s ease-in-out, top .5s ease-out, border-bottom .5s ease-out;
+    transition: background .3s linear, top .3s linear, border-bottom .3s linear;
+    z-index: 5;
 }
 
 .primary-header-container {
@@ -68,13 +69,80 @@ video {
     border: none;
 }
 
- .primary-container-scrolled {
+.primary-container-scrolled {
     border-bottom: none;
 }
 
+.logo {
+    height: 100%;
+    vertical-align: middle;
+}
+ 
 .logo-content,
 .button-content {
-    margin: 2rem 0 1.5rem 0;
+    margin: 1rem 0;
+}
+
+/* BANNER, BUILT BY CAMPER */
+.banner {
+    position: absolute;
+    height: 60vh;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0 1.875rem;
+    line-height: 2.90625rem;
+}
+
+.banner h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: normal;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.banner p span {
+    font-weight: bold;
+}
+
+.banner .button {
+    width: 100%;
+    border-radius: .25rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color .25s ease-in;
+}
+
+.banner .quote {
+    margin: 4vh 0 2vh 0;
+}
+
+.rfp {
+    border: 1px solid white;
+}
+
+.rfp:hover {
+    background-color: #27ccc0;
+}
+
+.banner .fa {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.banner .fa:hover {
+    color: #27ccc0;
 }
 
 /* TESTIMONIAL, BUILT BY CAMPER */
@@ -439,10 +507,6 @@ footer {
         font-weight: 400;
     }
 
-    .logo-content, .button-content {
-        margin: 1rem 0 .7rem 0;
-    }
-
     .contact-us {
         background-color: #603e96;
     }
@@ -472,6 +536,44 @@ footer {
         background: url("../images/logos.jpg") center center no-repeat;
         background-size: 100vw;
         height: 12vh;
+    }
+
+    /* BANNER, BUILT BY CAMPER */
+    .banner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        top: 33vh;
+    }
+
+    .banner h2,
+    .banner p,
+    .to-blog {
+        width: 100%;
+    }
+
+    .banner p {
+        margin: 0 0 3rem 0;
+        font-size: 1.375rem;
+    }
+
+    .banner h2 {
+        font-size: 1.9375rem;
+    }
+
+    .banner .quote,
+    .banner .rfp {
+        width: 11.875rem;
+        margin: 0;
+    }
+
+    .banner .rfp {
+        margin-left: .5rem;
+    }
+
+    .banner .fa {
+        margin-top: 3rem;
     }
 
     /* TESTIMONIAL, BUILT BY CAMPER */
@@ -594,6 +696,14 @@ footer {
         min-width: 100%;
         min-height: 100%;
     }
+
+    .banner h2 {
+        font-size: 2.875rem;
+    }
+
+    .banner p {
+        font-size: 1.8rem;
+    }
 }
 
 @media only screen and (min-width: 1190px) {
@@ -627,7 +737,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 774px){
+@media only screen and (max-width: 800px){
     .footer-buttons {
       width: 100%; //override the web width attribute
     }

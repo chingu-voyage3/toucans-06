@@ -28,8 +28,10 @@
  */
 
 window.onload = function() {
-    // select random number between 1 and 3, add innerHTML to video
-    // element with video file name
+    /*
+       Select random number between 1 and 3, add innerHTML to video
+       element with video file name
+    */
 
     let randomVideoNum = Math.floor(Math.random() * 3) + 1;
     let videoElement = document.getElementsByTagName("video")[0];
@@ -39,21 +41,35 @@ window.onload = function() {
     videoElement.innerHTML = `
             <source src="./resources/videos/video${randomVideoNum}.mp4" type="video/mp4">
             Videos of people doing different tasks in the nonprofit organizations we support.`;
+
+    window.onscroll = function() {
+        /*
+           Detect when window is scrolled down more than 50 pixels, then add
+           header-scrolled class and remove class when window is scrolled back to top. 
+        */
+
+        let primaryHeaderElement = document.getElementsByClassName("primary-header");
+        let primaryContainerElement = document.getElementsByClassName("primary-header-container");
+
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            primaryHeaderElement[0].classList.add("header-scrolled");
+            primaryContainerElement[0].classList.add("primary-container-scrolled");
+        } else {
+            primaryHeaderElement[0].classList.remove("header-scrolled");
+            primaryContainerElement[0].classList.remove("primary-container-scrolled");
+        }
+    };
 };
 
+/*
+ Scroll to blog section
 
-window.onscroll = function() {
-    // Detect when window is scrolled down more than 50 pixels, then add
-    // header-scrolled class and remove class when window is scrolled back to top.
-
-    let primaryHeaderElement = document.getElementsByClassName("primary-header");
-    let primaryContainerElement = document.getElementsByClassName("primary-header-container");
-
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        primaryHeaderElement[0].classList.add("header-scrolled");
-        primaryContainerElement[0].classList.add("primary-container-scrolled");
-    } else {
-        primaryHeaderElement[0].classList.remove("header-scrolled");
-        primaryContainerElement[0].classList.remove("primary-container-scrolled");
-    }
+ TODO: This should probably be replaced by jQuery so it's compatible with more browsers
+ and to make it so we can control the speed of the scroll.
+*/
+var scrollToBlog = () => {
+    document.querySelector('#blog').scrollIntoView({ 
+        behavior: 'smooth',
+        duration: 10000
+    });
 };
