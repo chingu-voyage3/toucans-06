@@ -560,6 +560,10 @@ video {
     .footer-buttons {
       width: 70%;
     }
+
+    .footer-sections ul li .connect-phone{
+      font-size: 22px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
