@@ -202,6 +202,7 @@ footer {
   max-width: 1170px;
   padding-left: 50px;
   padding-right: 50px;
+  margin: 0 auto;
 }
 
 .quote{
@@ -626,7 +627,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 774px){
     .footer-buttons {
       width: 100%; //override the web width attribute
     }
