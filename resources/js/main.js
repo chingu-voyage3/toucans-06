@@ -39,27 +39,26 @@ window.onload = function() {
     // Display the modal when the page is loaded.
     modal.style.display = "block";
 
-    // Hide the modal
+    // Hide the modal when X is clicked
     modalClose.onclick = function() {
         modal.style.display = "none";
     }
 
+    // Show modal when ribbon is clicked
     modalRibbon.onclick = function() {
         modal.style.display = "block";
     }
 
+    // Hide modal when area around text is clicked
     window.onclick = function(event) {
-        console.log(event);
-        console.log(modal);
         if (event.target === modal) {
-            console.log(`${modal} is clicked`);
             modal.style.display = "none";
         }
     }
 
     /*
-      Select random number between 1 and 3, add innerHTML to video
-      element with video file name
+       Select random number between 1 and 3, add innerHTML to video
+       element with video file name
     */
 
     let randomVideoNum = Math.floor(Math.random() * 3) + 1;

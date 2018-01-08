@@ -309,6 +309,7 @@ video {
     }
 .one-match:hover{
   Background-color: #0ea196;
+  text-decoration: none !important;
 
 }
 
@@ -318,11 +319,19 @@ video {
 
 .contact-us:hover {
         Background-color: #39186c;
+        text-decoration: none !important;
+}
+
+footer {
+  background-color: black;
 }
 
 .fcontainer {
   padding: 30px;
-  background-color: black;
+  max-width: 1170px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
 }
 
 .quote{
@@ -332,6 +341,7 @@ video {
 
 .quote:hover{
   background: #ea2e06;
+  text-decoration: none !important;
 }
 
 .col-block {
@@ -481,7 +491,19 @@ video {
   text-decoration: none !important;
 }
 
-/* MEDIA QUERIES */
+.footer-copyright address {
+  text-decoration: none !important;
+  color: #636363 !important;
+  display: inline;
+}
+
+.footer-copyright address:hover {
+  color: white !important;
+  text-decoration: none !important;
+  display: inline;
+}
+
+/* Media Queries */
 
 @media only screen and (min-width: 768px) {
     /* MODAL, BUILT BY CAMPER */
@@ -697,7 +719,7 @@ video {
         order: 4;
         width: 45%;
         margin: 0 0 0 1.5rem;
-        text-align: left;
+        text-align: right;
     }
 
     .alzheimer .case-study-description {
@@ -708,6 +730,19 @@ video {
 
     .alzheimer .case-study-image {
         order: 4;
+    }
+
+    /* FOOTER, BUILT BY SHALINI */
+    .footer-logo {
+      width: 30%;
+    }
+
+    .footer-buttons {
+      width: 70%;
+    }
+
+    .footer-sections ul li .connect-phone{
+      font-size: 22px;
     }
 }
 
@@ -766,5 +801,70 @@ video {
 
     .testimonials {
         max-width: 1170px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .footer-buttons {
+      width: 100%; //override the web width attribute
+    }
+
+    .float-right, .col-block{
+      float:none;
+    }
+
+    .fcontainer {
+      padding: 0%;
+    }
+
+    .footer-buttons .footer-buttons-wrapper {
+      margin: 0 40px 0 40px;
+    }
+
+    .footer-buttons .button {
+      box-sizing: content-box;
+      display: block;
+      float: none;
+      width: auto;
+    }
+
+    .footer-buttons a{
+      text-decoration: none;
+    }
+
+    .footer-logo, .footer-aboutus-section, .footer-oursolutions-section, .footer-ourwork-section, .footer-moreinfo-section
+    {
+      display: none;
+    }
+
+    .footer-sections {
+      margin-left: 0;//reset web margin
+      width: 100%;
+    }
+
+    .footer-sections address {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding-top: 2em;
+    }
+
+    .section-header, .footer-list-item-anchor, .social, .footer-copyright{
+      display: block;
+    }
+
+    .footer-list-item-anchor li {
+      text-align: center;
+      padding: 5px;
+    }
+
+    .footer-sections .social {
+      padding-bottom: 50px;
+    }
+
+    .footer-copyright {
+      padding: 20px;
+      margin-top: 0;
+
     }
 }
