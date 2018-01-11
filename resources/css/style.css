@@ -16,12 +16,13 @@ html {
 /* MODAL, BUILT BY CAMPER */
 .modal-ribbon {
     position: fixed;
-    top: 15px;
-    left: -30px;
-    width: 120px;
-    padding: .5rem;
+    top: 10px;
+    left: -1.54rem;
+    width: 6rem;
+    padding: .4rem .5rem;
     font-size: .75rem;
     font-weight: bold;
+    letter-spacing: .08rem;
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
     transform: rotate(-45deg);
@@ -519,6 +520,12 @@ footer {
         font-size: 1.5rem;
     }
 
+    .modal-ribbon {
+        padding: .4rem .4rem .4rem 0;
+        width: 6.75rem;
+        letter-spacing: .15rem;
+    }
+    
     /* HEADER, BUILT BY CAMPER */
     .header-media {
         height: 88vh;
