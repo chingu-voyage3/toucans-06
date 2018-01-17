@@ -77,7 +77,7 @@ video {
     height: 100%;
     vertical-align: middle;
 }
- 
+
 .logo-content,
 .button-content {
     margin: 1rem 0;
@@ -145,6 +145,296 @@ video {
     color: #27ccc0;
 }
 
+/* MAIN-SECTION, BUILT BY SHALINI */
+.blog{
+  background: #f5f5f5;
+  padding: 25px 25px 70px 25px;
+  margin-bottom: 50px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-top {
+  padding: 25px 15px 50px;
+  text-align: center;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section-top h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-top a {
+  color: #020308;
+  outline: none !important;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: auto 15px auto 15px;
+}
+
+.blog-holder{
+  display: grid;
+  padding: 0;
+  margin-right: 2%;
+  margin-left: 5%; /*new*/
+}
+
+.content-blog{
+  background: #fff;
+  padding: 0 0 40px 0;
+  margin: 0px auto 22px auto;
+}
+
+.content-text{
+  padding: 0px 25px;
+}
+
+.content-text h3{
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  margin-top: 20px;
+  display: block;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.content-text h3 a{
+  color: #020308;
+  text-decoration: none;
+}
+
+.content-text p{
+  color: #020308;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  line-height: 1.428;
+}
+
+.date-comments {
+  margin: 15px 0 25px 0px;
+  position: absolute;
+  display: block;
+  width: 90%;
+  padding: 0 15px 0 15px;
+  }
+
+.date-comments p{
+  background: #39186c;
+    text-align: center;
+    color: #fff;
+    line-height: 3.5em;
+    margin-top: -10px;
+    /* padding: 0px 10px; */
+    font-size: 13px;
+    font-weight: 400;
+    width: calc(100% - 90px);
+  }
+
+.blog-img{
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.widget-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 90px;
+  background: #27ccc0;
+  min-height: 200px;
+  margin-bottom: 30px;
+}
+
+.text-widget {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  text-align: center;
+  float: left;
+  padding: 20px 1.66% 0 1.66%;
+  margin-left: 10%;
+  padding-bottom: 50px;
+}
+
+.guide, .graphic{
+  display: none;
+}
+
+.info h3{
+  color: #fff;
+  line-height: 1em;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.info span{
+  display: block;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+.widget-button {
+  margin-top: 20px;
+  background: #f5421c;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 1.4285em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+}
+
+.widget-button:hover{
+  background: #ea2e06;
+}
+
+.arrow {
+background: #f5f5f5;
+color: #9b9b9b;
+left: 50%;
+position: absolute;
+margin-top: 25px;
+width: 90px;
+height: 90px;
+text-align: center;
+font-size: 75px;
+line-height: 1.3em;
+border-radius: 50%;
+box-sizing: border-box;
+transform: translate(-50%, 0);
+}
+
+.what-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.services-wrapper {
+  margin-right: 0;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nonprofit a, .graphic-design a, .search-market a, .copywriting a{
+  text-decoration: none;
+  color: #333;
+}
+
+.nonprofit, .graphic-design, .search-market, .copywriting {
+  display: grid;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.content-services {
+background: #f7f7f7;
+min-height: 100%;
+margin-bottom: 50px;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+transition: 0.3s;
+}
+
+.title {
+  background: #ff3366;
+    height: 45px;
+    margin-bottom: 40px;
+}
+
+.title h3 {
+  text-transform: none;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  line-height: 2em;
+  display: block;
+  width: 95%;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  text-decoration: none;
+}
+
+.icon-website, .icon-graphic, .icon-search, .icon-security{
+  background: url(/Users/Shalinidc/Documents/git/toucans-06/resources/images/icons.png);
+  width: 110px;
+  height: 96px;
+  margin: 0 auto;
+  display: block;
+  transition: 0.3s;
+}
+
+.icon-website {
+  background-position: -110px 0px;
+}
+
+.icon-graphic{
+  background-position: 330px 0px;
+}
+
+.icon-search{
+  background-position: 555px 0px;
+}
+
+.icon-security{
+  background-position: 655px 0px;
+}
+
+.content{
+  margin: 25px;
+  padding: 0 15px 25px;
+}
+
+.content p {
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.content p strong{
+  font-weight: 700;
+}
 /* TESTIMONIAL, BUILT BY CAMPER */
 .testimonials {
     display: flex;
@@ -575,6 +865,92 @@ footer {
     .banner .fa {
         margin-top: 3rem;
     }
+      /* MAIN-SECTION, BUILT BY SHALINI */
+
+      .content-blog{
+        width: 95%;
+        line-height: 1.42857143;
+      }
+
+      .blog-holder {
+        position: relative;
+        margin-left: 5%;
+      }
+
+      .wrapper{
+        grid-template-columns: repeat(2, 50%);
+      }
+      .date-comments{
+        margin: 15px 0 0 0px;
+        bottom: 0;
+        left: 36px;
+        width: 100%;
+      }
+
+      .services-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+      }
+
+      .content-services {
+        min-height: 0;
+        margin-bottom: auto;
+      }
+
+      .services-wrapper a{
+        background: #f7f7f7;
+      }
+
+      .widget-wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 5% 5% 0 5%;
+        width: auto;
+      }
+
+      .text-widget, .guide, .graphic{
+        background: #27ccc0;
+      }
+
+      .widget-button{
+        width: 190px;
+      }
+
+      .dialouge{
+        width: 28%;
+        position: absolute;
+        z-index: 2;
+        padding-left: 50px;
+      }
+
+      .dialouge p{
+        background: #0ea196;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 10px;
+        width: 60%;
+      }
+
+      .guide{
+        width: 166px;
+        display: table-footer-group;
+      }
+
+      .guide img{
+        position: relative;
+        margin-top: 145px;
+        margin-left: -15%;
+        vertical-align: middle;
+      }
+
+      .graphic {
+        display: grid;
+      }
+
+      .graphic img{
+        width: 300px;
+        padding: 30px 35px 0px 100px;
+      }
+
 
     /* TESTIMONIAL, BUILT BY CAMPER */
     .quote-icon {
@@ -704,6 +1080,27 @@ footer {
     .banner p {
         font-size: 1.8rem;
     }
+
+    .wrapper {
+      grid-template-columns: 1fr, 1fr;
+    }
+
+    /* MAIN-SECTION, BUILT BY SHALINI */
+
+    /*.guide p::before {
+      content: "";
+      border-top: 22px solid #0ea196;
+      border-left: 22px solid transparent;
+      border-right: 0px solid transparent;
+      position: absolute;
+      margin-top: 58px;
+      margin-left: 120px;
+    } */
+
+    .dialouge {
+      padding-top: 60px;
+    }
+
 }
 
 @media only screen and (min-width: 1190px) {
@@ -735,6 +1132,55 @@ footer {
         max-width: 1170px;
         /* margin: 5rem auto; */
     }
+
+/* MAIN-SECTION , BUILT BY SHALINI */
+
+  .wrapper{
+       grid-template-columns: repeat(2, 50%);
+       margin: 0 100px 0 100px;
+  }
+
+  .widget-wrapper{
+    width: auto;
+    min-height: 200px;
+    margin: 5% 10% 0 10%;
+  }
+
+  .info {
+    padding-top: 20px;
+  }
+
+  .dialouge {
+    padding-top: 55px;
+  }
+
+  .dialouge p{
+    width: 70%;
+    padding: 10px 10px;
+  }
+
+  .guide p::before {
+    content: "";
+    border-top: 22px solid #0ea196;
+    border-left: 22px solid transparent;
+    border-right: 0px solid transparent;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 120px;
+  }
+
+  .graphic img{
+    padding: 30px 35px 0px 30px;
+    max-width: 100%;
+  }
+
+  .services-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services-wrapper a{
+    background: none;
+  }
 }
 
 @media only screen and (max-width: 800px){
