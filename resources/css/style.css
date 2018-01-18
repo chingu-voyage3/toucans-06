@@ -153,8 +153,6 @@ video {
 }
 
 .container {
-    //padding-right: 15px;
-    //padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -188,14 +186,12 @@ video {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    /* margin: auto 15px auto 15px; */
 }
 
 .blog-holder{
     display: grid;
     padding: 0 0 70px 0;
-    /*margin-right: 2%;
-    margin-left: 5%; /* /*new*/ 
+    margin-right: 1%;
 }
 
 .content-blog{
@@ -878,7 +874,6 @@ footer {
 
     .blog-holder {
         position: relative;
-        /* margin-left: 5%;*/
     }
 
     .wrapper{
@@ -1126,7 +1121,6 @@ footer {
 
     .wrapper{
         grid-template-columns: repeat(2, 50%);
-        /* margin: 0 100px 0 100px; */
     }
 
     .widget-wrapper{
