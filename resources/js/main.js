@@ -68,7 +68,7 @@ window.onload = function() {
  and to make it so we can control the speed of the scroll.
 */
 var scrollToBlog = () => {
-    document.querySelector('#blog').scrollIntoView({
+    document.querySelector('.blog').scrollIntoView({
         behavior: 'smooth',
         duration: 10000
     });
