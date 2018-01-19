@@ -29,6 +29,34 @@
 
 window.onload = function() {
     /*
+      Display the modal when the page loads.
+      Based on: https://www.w3schools.com/howto/howto_css_modals.asp
+     */
+    let modal = document.getElementById("modal");
+    let modalClose = document.getElementsByClassName("fa-times")[0];
+    let modalRibbon = document.getElementsByClassName("modal-ribbon")[0];
+
+    // Display the modal when the page is loaded.
+    modal.style.display = "block";
+
+    // Hide the modal when X is clicked
+    modalClose.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Show modal when ribbon is clicked
+    modalRibbon.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Hide modal when area around text is clicked
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    /*
        Select random number between 1 and 3, add innerHTML to video
        element with video file name
     */
@@ -44,8 +72,8 @@ window.onload = function() {
 
     window.onscroll = function() {
         /*
-           Detect when window is scrolled down more than 50 pixels, then add
-           header-scrolled class and remove class when window is scrolled back to top.
+          Detect when window is scrolled down more than 50 pixels, then add
+          header-scrolled class and remove class when window is scrolled back to top.
         */
 
         let primaryHeaderElement = document.getElementsByClassName("primary-header");
@@ -62,10 +90,10 @@ window.onload = function() {
 };
 
 /*
- Scroll to blog section
+  Scroll to blog section
 
- TODO: This should probably be replaced by jQuery so it's compatible with more browsers
- and to make it so we can control the speed of the scroll.
+  TODO: This should probably be replaced by jQuery so it's compatible with more browsers
+  and to make it so we can control the speed of the scroll.
 */
 var scrollToBlog = () => {
     document.querySelector('.blog').scrollIntoView({

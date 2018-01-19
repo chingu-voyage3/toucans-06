@@ -13,6 +13,69 @@ html {
     box-sizing: inherit;
 }
 
+/* MODAL, BUILT BY CAMPER */
+.modal-ribbon {
+    position: fixed;
+    top: 10px;
+    left: -1.54rem;
+    width: 6rem;
+    padding: .4rem .5rem;
+    font-size: .75rem;
+    font-weight: bold;
+    letter-spacing: .08rem;
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: text-shadow .3s linear;
+}
+
+.modal-ribbon:hover {
+    cursor: pointer;
+    text-shadow: 1px 0 8px rgb(0, 0, 0);;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(29, 12, 54, 0.95);
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.modal a {
+    color: white;
+    transition: text-shadow .25s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fa-times {
+    transition: text-shadow .25s ease-in-out;
+}
+
+.fa-times:hover,
+.fa-times:focus,
+.modal a:hover,
+.modal a:focus {
+    text-shadow: 1px 0 10px rgb(245, 227, 157);
+    cursor: pointer;
+}
+
+
 /* HEADER, BUILT BY CAMPER */
 h1,
 h2 {
@@ -56,6 +119,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid #a7c3e9;
 }
 
@@ -734,6 +798,23 @@ footer {
 /* Media Queries */
 
 @media only screen and (min-width: 768px) {
+    /* MODAL, BUILT BY CAMPER */
+    .modal {
+        line-height: 2rem;
+    }
+    
+    .modal p {
+        width: 50%;
+        margin: 1rem auto;
+        font-size: 1.5rem;
+    }
+
+    .modal-ribbon {
+        padding: .4rem .4rem .4rem 0;
+        width: 6.75rem;
+        letter-spacing: .15rem;
+    }
+    
     /* HEADER, BUILT BY CAMPER */
     .header-media {
         height: 88vh;
