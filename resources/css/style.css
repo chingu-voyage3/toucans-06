@@ -95,6 +95,10 @@ header .fa{
     text-decoration: none;
 }
 
+header .fa-bars {
+    margin-left: 1rem;
+}
+
 .header-media {
     height: 100vh;
     background: url("../images/bg-header-home.jpg") no-repeat center center fixed;
@@ -900,7 +904,6 @@ footer {
 
     header .fa-bars {
         font-size: 1.2rem;
-        margin-left: 1rem;
     }
 
     .clients {
