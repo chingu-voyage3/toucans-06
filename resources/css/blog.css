@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(90, 88, 88);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    max-width: 768px;
+}
+
+p,
+ul {
+    margin: 1rem;
+}
+
+a:hover {
+    background-color: #FFFF00;
+    border: 1px red solid;
+}
+
+code {
+    font-weight: bold;
+}
+
+.featured-project {
+    max-width: 100%;
+    margin: 1rem;
+}
+
+.featured-project:hover {
+    cursor: pointer;
+    border: 2px red solid;
+}
+
+.featured-project-link:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.featured-project-image {
+    margin: 0;
+    width: 100%;
+}
+
+.standout {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 768px) {
+    img {
+        margin: 2rem auto;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+  
+    p,
+    ul {
+        width: 100%;
+        align-self: center;
+    }
+
+    .featured-project {
+        margin: auto;
+    }
+    
+    .gist {
+        width: 768px;
+        margin: auto;
+    }
+}

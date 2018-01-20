@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--HEAD-->
+  <head>
+    <link href="./resources/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/blog.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./resources/images/favicon.jpg">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700" rel="stylesheet">
+    <title>Elevation Clone Blog Post</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>How to Plan a Quality Website Clone</h1>
+    </header>
+
+    <main>
+
+      <img src="./resources/images/hackers-planning.jpg" alt="Characters from the movie 'Hackers' huddled around computer, looking at viewers">
+
+      <p>We're hackers. We hack because we want to grow as people. We hack because we want to learn. We don't hack banks, governments, or haters. We hack to learn how to build websites.</p>
+
+      <p>We're <a href="https://github.com/chingu-voyage3/toucans-06">Toucans-06</a>, a team of beginning web development learners brought together by the <a href="https://medium.com/chingu/voyage-3-prep-overview-of-what-you-need-to-know-551b2c889f69">Chingu Voyage 3 Cohort</a>. We don't know one another's faces. We don't know voices. All we know is that we've come together to complete a project together.</p>
+
+      <p>Six weeks ago, we held our first meeting in our Slack channel. Today, we present to the world our minimum viable product (MVP).</p>
+
+      <div class="featured-project">
+        <a class="featured-project-link" href="index.html">
+          <img class="featured-project-image" src="./resources/images/project-screenshot.jpg" alt="Link to Elevation Web clone project">
+        </a>
+      </div>
+
+      <p><a href="https://github.com/chingu-voyage3/toucans-06">Link to our GitHub repo</a></p>
+
+      <p>To be clear, our project isn't feature complete. We finished what we could in six weeks. For some of us, this is the first remote development project we've worked on. So, it's <span class="standout">astounding</span> that we were successful in all stages of the project management process!</p>
+
+      <p>The project is not very complex, in and of itself. There are some more complex elements requiring JavaScript and complicated CSS positioning. However, the more complicated part of the learning experience was building it together as a team and overcoming the obstacles it takes for a team to come together to complete it.</p>
+
+      <h2>Our Project Goals and Process</h2>
+
+      <img src="./resources/images/hackers-concentrating.jpg" alt="Characters from the movie 'Hackers' concentrating">
+
+      <p>We set out to clone the <a href="https://elevationweb.org">Elevation Web front page</a>. Elevation Web is, according to that front page, a web development agency that focuses on building nonprofit organization websites. We didn't settle for cloning a bot landing page. We didn't want to clone a random business site. Rather, we wanted something ... well ... more meaningful. Something that more closely matches our goals of developing websites for those we care most about.</p>
+
+      <p>Elevationweb.org is built using <a href="https://wordpress.org">WordPress</a>. It's tempting to clone the site using WordPress since we'd have access to all of the plugins, themes, and page builders available for WordPress. However, we wanted to challenge ourselves by only using HTML5, CSS3, and vanilla JavaScript (where possible).</p>
+
+      <p>Our contribution process was based on <a href="https://github.com/freeCodeCamp/freeCodeCamp/blob/staging/CONTRIBUTING.md">freeCodeCamp's contribution process</a>.</p>
+
+      <p>We initially divided the site into three main sections: header, main, and footer. We assigned these sections between the three of us. Our fourth team member informed us that they had started a new job and wouldn't be able to participate in the team. Each of us divided our sections into smaller sections. Basically, we broke the front page down into its most basic parts so we could build it back up again.</p>
+
+      <p>We had two initial meetings to iron out the details and the rest of the time was spent coding and reviewing each other's code. We used <a href="https://github.com/chingu-voyage3/toucans-06/projects/1">GitHub's project kanban board interface</a> to manage the project.</p>
+
+      <h2>Project Details</h2>
+
+      <img src="./resources/images/hackers-subway.jpg" alt="Characters from the movie 'Hackers' on the subway">
+
+      <p>There are a few differences between our MVP and the original site. One main difference is that we only have the front page. Other differences are in the styling and that we didn't use WordPress plugins and themes.</p>
+
+      <p>We have some basic JavaScript to randomly select a video background, scroll smoothly to the blog section when the chevron-down icon (<span class="fa fa-chevron-down" aria-hidden="true"></span>) is clicked, and to detect when the mouse scrolls in order to change the styling of the fixed header. We also have some jQuery.</p>
+
+      <p>The video background in the header is done with the following snippet of code. This randomly selects a video and then inserts the background HTML code into the page:</p>
+
+      <script src="https://gist.github.com/camper-fcc/739faf36bfcfc39add8011b7f03a0d0f.js"></script>
+
+      <p>Each video file is named <code>video[n].mp4</code> where <code>n</code> is either <code>1</code>, <code>2</code>, or <code>3</code>.  A new video is used as the background for the header each time the page is reloaded or refreshed. This code also updates the video poster for systems that take longer to download and play the video.</p>
+
+      <p>We are using CSS Flexbox and Grid as well.</p>
+
+      <script src="https://gist.github.com/camper-fcc/59a87ce023eb3e5573ef281c4dc168b8.js"></script>
+
+      <p>We evaluated our project with the following validators in order to find and fix coding mistakes and make sure we're coding with best practices:</p>
+
+      <ul>
+        <li><a href="https://validator.w3.org/nu/#textarea">w3.org HTML Validator</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/#validate_by_input">w3.org CSS3 Validator</a></li>
+        <li><a href="http://csslint.net">CSSLint.net</a></li>
+        <li><a href="https://wave.webaim.org/">WebAIM WAVE Accessbility Validator</a></li>
+        <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Color Contrast Checker</a></li>
+      </ul>
+
+      <p>Since we were making a clone, we wanted to stay somewhat true to the original site in the overall design, colors, placement of sections and page items, etc... This means many of the color contrast errors we have are also present in the original site. We left these in the code, but note that if we were designing and maintaining the site ourselves, we'd fix the color contrast errors so everyone would be able to see all of the elements on the page. That said, our code leads to far fewer overall accessiblity errors than the original site.</p>
+
+      <h2>Takeaways and Conclusion</h2>
+
+      <img src="./resources/images/hackers-head-to-head.jpg" alt="Characters from the movie 'Hackers' going head-to-head with one another">
+
+      <p>All of us attempted tasks that were new or difficult for us, whether that was new JavaScript, using pure CSS instead of Bootstrap, or writing complex HTML markup. I think it helps to know that one's team members have one's back in case one gets stuck, so attempting to do something new and difficult is less scary.</p>
+
+      <p>We all were cordial and compassionate to one another both with code reviews and as life issues came along to steal time and energy from the project. This allayed fears some of us had about teams focusing on the strongest, most active members while leaving the rest behind.</p>
+
+      <p>Overall, the Chingu idea of getting people into teams early on is a great idea! We learned a lot about project management, GitHub workflows using feature branches, HTML, CSS, and JavaScript.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2018 All Rights Reserved.</p>
+      <p>Toucans-06: <a href="https://forum.freecodecamp.org/u/camper">@Camper</a>, <a href="https://github.com/shalinidc">@Shalini DC</a>, and <a href="https://github.com/miraclmoore">@Cmoore</a></p>
+    </footer>
+
+  </body>
+</html>
